@@ -1,5 +1,5 @@
 # cookie-stand
 
-### Salmon Cookies Project.
+## Salmon Cookies Project.
 
 Business is business :)
