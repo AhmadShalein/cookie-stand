@@ -10,7 +10,7 @@ const seattle = {
     custmersNum: [],
     avgCustmers: function(){
         for(let i = 0 ; i < workingHours.length ; i++)
-        this.custmersNum.push(Math.floor(Math.random() * (this.max - this.min) + this.min));
+        this.custmersNum.push(Math.ceil(Math.random() * (this.max - this.min) + this.min));
         console.log(this.custmersNum);
     },
     cookiesNum: [],
@@ -55,7 +55,7 @@ const tokyo = {
     custmersNum: [],
     avgCustmers: function(){
         for(let i = 0 ; i < workingHours.length ; i++)
-        this.custmersNum.push(Math.floor(Math.random() * (this.max - this.min) + this.min));
+        this.custmersNum.push(Math.ceil(Math.random() * (this.max - this.min) + this.min));
         console.log(this.custmersNum);
     },
     cookiesNum: [],
@@ -100,7 +100,7 @@ const dubai = {
     custmersNum: [],
     avgCustmers: function(){
         for(let i = 0 ; i < workingHours.length ; i++)
-        this.custmersNum.push(Math.floor(Math.random() * (this.max - this.min) + this.min));
+        this.custmersNum.push(Math.ceil(Math.random() * (this.max - this.min) + this.min));
         console.log(this.custmersNum);
     },
     cookiesNum: [],
@@ -145,7 +145,7 @@ const paris = {
     custmersNum: [],
     avgCustmers: function(){
         for(let i = 0 ; i < workingHours.length ; i++)
-        this.custmersNum.push(Math.floor(Math.random() * (this.max - this.min) + this.min));
+        this.custmersNum.push(Math.ceil(Math.random() * (this.max - this.min) + this.min));
         console.log(this.custmersNum);
     },
     cookiesNum: [],
@@ -190,7 +190,7 @@ const lima = {
     custmersNum: [],
     avgCustmers: function(){
         for(let i = 0 ; i < workingHours.length ; i++)
-        this.custmersNum.push(Math.floor(Math.random() * (this.max - this.min) + this.min));
+        this.custmersNum.push(Math.ceil(Math.random() * (this.max - this.min) + this.min));
         console.log(this.custmersNum);
     },
     cookiesNum: [],
