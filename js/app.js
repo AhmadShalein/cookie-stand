@@ -29,6 +29,7 @@ const seattle = {
     let body = document.getElementById('bodyContainer');
     let h2StoreOne = document.createElement('h2');
     body.appendChild(h2StoreOne);
+    h2StoreOne.textContent = this.Location;
     let ulStoreOne = document.createElement('ul');
     h2StoreOne.appendChild(ulStoreOne);
     for (let i = 0; i < this.cookiesNum.length; i++) {
@@ -72,6 +73,7 @@ const tokyo = {
     creatingSalmonCookies: function(){
     let body = document.getElementById('bodyContainer');
     let h2StoreOne = document.createElement('h2');
+    h2StoreOne.textContent = this.Location;
     body.appendChild(h2StoreOne);
     let ulStoreOne = document.createElement('ul');
     h2StoreOne.appendChild(ulStoreOne);
@@ -117,6 +119,7 @@ const dubai = {
     let body = document.getElementById('bodyContainer');
     let h2StoreOne = document.createElement('h2');
     body.appendChild(h2StoreOne);
+    h2StoreOne.textContent = this.Location;    
     let ulStoreOne = document.createElement('ul');
     h2StoreOne.appendChild(ulStoreOne);
     for (let i = 0; i < this.cookiesNum.length; i++) {
@@ -161,6 +164,7 @@ const paris = {
     let body = document.getElementById('bodyContainer');
     let h2StoreOne = document.createElement('h2');
     body.appendChild(h2StoreOne);
+    h2StoreOne.textContent = this.Location;
     let ulStoreOne = document.createElement('ul');
     h2StoreOne.appendChild(ulStoreOne);
     for (let i = 0; i < this.cookiesNum.length; i++) {
@@ -205,6 +209,7 @@ const lima = {
     let body = document.getElementById('bodyContainer');
     let h2StoreOne = document.createElement('h2');
     body.appendChild(h2StoreOne);
+    h2StoreOne.textContent = this.Location;
     let ulStoreOne = document.createElement('ul');
     h2StoreOne.appendChild(ulStoreOne);
     for (let i = 0; i < this.cookiesNum.length; i++) {
