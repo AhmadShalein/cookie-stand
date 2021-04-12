@@ -25,7 +25,7 @@ const seattle = {
         this.sum = this.sum + this.cookiesNum[k]
     }
     },
-    creatingSalmonCookies: function(){
+    render: function(){
     let div = document.getElementById('Cites');
     let h2E1 = document.createElement('h2');
     div.appendChild(h2E1);
@@ -45,7 +45,7 @@ const seattle = {
 seattle.avgCustmers();
 seattle.cookiesPurchased();
 seattle.cookiesSum();
-seattle.creatingSalmonCookies();
+seattle.render();
 
 const tokyo = {
     Location: 'Tokyo',
@@ -70,7 +70,7 @@ const tokyo = {
         this.sum = this.sum + this.cookiesNum[k]
     }
     },
-    creatingSalmonCookies: function(){
+    render: function(){
     let div = document.getElementById('Cites');
     let h2E1 = document.createElement('h2');
     div.appendChild(h2E1);
@@ -90,7 +90,7 @@ const tokyo = {
 tokyo.avgCustmers();
 tokyo.cookiesPurchased();
 tokyo.cookiesSum();
-tokyo.creatingSalmonCookies();
+tokyo.render();
 
 const dubai = {
     Location: 'Dubai',
@@ -115,7 +115,7 @@ const dubai = {
         this.sum = this.sum + this.cookiesNum[k]
     }
     },
-    creatingSalmonCookies: function(){
+    render: function(){
     let div = document.getElementById('Cites');
     let h2E1 = document.createElement('h2');
     div.appendChild(h2E1);
@@ -135,7 +135,7 @@ const dubai = {
 dubai.avgCustmers();
 dubai.cookiesPurchased();
 dubai.cookiesSum();
-dubai.creatingSalmonCookies();
+dubai.render();
 
 const paris = {
     Location: 'Paris',
@@ -160,7 +160,7 @@ const paris = {
         this.sum = this.sum + this.cookiesNum[k]
     }
     },
-    creatingSalmonCookies: function(){
+    render: function(){
     let div = document.getElementById('Cites');
     let h2E1 = document.createElement('h2');
     div.appendChild(h2E1);
@@ -180,7 +180,7 @@ const paris = {
 paris.avgCustmers();
 paris.cookiesPurchased();
 paris.cookiesSum();
-paris.creatingSalmonCookies();
+paris.render();
 
 const lima = {
     Location: 'Lima',
@@ -205,7 +205,7 @@ const lima = {
         this.sum = this.sum + this.cookiesNum[k]
     }
     },
-    creatingSalmonCookies: function(){
+    render: function(){
     let div = document.getElementById('Cites');
     let h2E1 = document.createElement('h2');
     div.appendChild(h2E1);
@@ -225,4 +225,4 @@ const lima = {
 lima.avgCustmers();
 lima.cookiesPurchased();
 lima.cookiesSum();
-lima.creatingSalmonCookies();
+lima.render();
