@@ -26,20 +26,20 @@ const seattle = {
     }
     },
     creatingSalmonCookies: function(){
-    let body = document.getElementById('bodyContainer');
-    let h2StoreOne = document.createElement('h2');
-    body.appendChild(h2StoreOne);
-    h2StoreOne.textContent = this.Location;
-    let ulStoreOne = document.createElement('ul');
-    h2StoreOne.appendChild(ulStoreOne);
+    let div = document.getElementById('Cites');
+    let h2E1 = document.createElement('h2');
+    div.appendChild(h2E1);
+    h2E1.textContent = this.Location;
+    let ulE1 = document.createElement('ul');
+    h2E1.appendChild(ulE1);
     for (let i = 0; i < this.cookiesNum.length; i++) {
-        let liStoreOne = document.createElement('li')
-        ulStoreOne.appendChild(liStoreOne);
-        liStoreOne.textContent = `${workingHours[i]}: ${this.cookiesNum[i]} cookies`;
+        let liE1 = document.createElement('li')
+        ulE1.appendChild(liE1);
+        liE1.textContent = `${workingHours[i]}: ${this.cookiesNum[i]} cookies`;
     }
-        let liStoreOne = document.createElement('li')
-        ulStoreOne.appendChild(liStoreOne);
-        liStoreOne.textContent = `Total: ${this.sum} cookies`;
+        let liE1 = document.createElement('li')
+        ulE1.appendChild(liE1);
+        liE1.textContent = `Total: ${this.sum} cookies`;
     }
 }
 seattle.avgCustmers();
@@ -71,20 +71,20 @@ const tokyo = {
     }
     },
     creatingSalmonCookies: function(){
-    let body = document.getElementById('bodyContainer');
-    let h2StoreOne = document.createElement('h2');
-    h2StoreOne.textContent = this.Location;
-    body.appendChild(h2StoreOne);
-    let ulStoreOne = document.createElement('ul');
-    h2StoreOne.appendChild(ulStoreOne);
+    let div = document.getElementById('Cites');
+    let h2E1 = document.createElement('h2');
+    div.appendChild(h2E1);
+    h2E1.textContent = this.Location;
+    let ulE1 = document.createElement('ul');
+    h2E1.appendChild(ulE1);
     for (let i = 0; i < this.cookiesNum.length; i++) {
-        let liStoreOne = document.createElement('li')
-        ulStoreOne.appendChild(liStoreOne);
-        liStoreOne.textContent = `${workingHours[i]}: ${this.cookiesNum[i]} cookies`;
+        let liE1 = document.createElement('li')
+        ulE1.appendChild(liE1);
+        liE1.textContent = `${workingHours[i]}: ${this.cookiesNum[i]} cookies`;
     }
-        let liStoreOne = document.createElement('li')
-        ulStoreOne.appendChild(liStoreOne);
-        liStoreOne.textContent = `Total: ${this.sum} cookies`;
+        let liE1 = document.createElement('li')
+        ulE1.appendChild(liE1);
+        liE1.textContent = `Total: ${this.sum} cookies`;
     }
 }
 tokyo.avgCustmers();
@@ -116,20 +116,20 @@ const dubai = {
     }
     },
     creatingSalmonCookies: function(){
-    let body = document.getElementById('bodyContainer');
-    let h2StoreOne = document.createElement('h2');
-    body.appendChild(h2StoreOne);
-    h2StoreOne.textContent = this.Location;    
-    let ulStoreOne = document.createElement('ul');
-    h2StoreOne.appendChild(ulStoreOne);
+    let div = document.getElementById('Cites');
+    let h2E1 = document.createElement('h2');
+    div.appendChild(h2E1);
+    h2E1.textContent = this.Location;
+    let ulE1 = document.createElement('ul');
+    h2E1.appendChild(ulE1);
     for (let i = 0; i < this.cookiesNum.length; i++) {
-        let liStoreOne = document.createElement('li')
-        ulStoreOne.appendChild(liStoreOne);
-        liStoreOne.textContent = `${workingHours[i]}: ${this.cookiesNum[i]} cookies`;
+        let liE1 = document.createElement('li')
+        ulE1.appendChild(liE1);
+        liE1.textContent = `${workingHours[i]}: ${this.cookiesNum[i]} cookies`;
     }
-        let liStoreOne = document.createElement('li')
-        ulStoreOne.appendChild(liStoreOne);
-        liStoreOne.textContent = `Total: ${this.sum} cookies`;
+        let liE1 = document.createElement('li')
+        ulE1.appendChild(liE1);
+        liE1.textContent = `Total: ${this.sum} cookies`;
     }
 }
 dubai.avgCustmers();
@@ -161,20 +161,20 @@ const paris = {
     }
     },
     creatingSalmonCookies: function(){
-    let body = document.getElementById('bodyContainer');
-    let h2StoreOne = document.createElement('h2');
-    body.appendChild(h2StoreOne);
-    h2StoreOne.textContent = this.Location;
-    let ulStoreOne = document.createElement('ul');
-    h2StoreOne.appendChild(ulStoreOne);
+    let div = document.getElementById('Cites');
+    let h2E1 = document.createElement('h2');
+    div.appendChild(h2E1);
+    h2E1.textContent = this.Location;
+    let ulE1 = document.createElement('ul');
+    h2E1.appendChild(ulE1);
     for (let i = 0; i < this.cookiesNum.length; i++) {
-        let liStoreOne = document.createElement('li')
-        ulStoreOne.appendChild(liStoreOne);
-        liStoreOne.textContent = `${workingHours[i]}: ${this.cookiesNum[i]} cookies`;
+        let liE1 = document.createElement('li')
+        ulE1.appendChild(liE1);
+        liE1.textContent = `${workingHours[i]}: ${this.cookiesNum[i]} cookies`;
     }
-        let liStoreOne = document.createElement('li')
-        ulStoreOne.appendChild(liStoreOne);
-        liStoreOne.textContent = `Total: ${this.sum} cookies`;
+        let liE1 = document.createElement('li')
+        ulE1.appendChild(liE1);
+        liE1.textContent = `Total: ${this.sum} cookies`;
     }
 }
 paris.avgCustmers();
@@ -206,20 +206,20 @@ const lima = {
     }
     },
     creatingSalmonCookies: function(){
-    let body = document.getElementById('bodyContainer');
-    let h2StoreOne = document.createElement('h2');
-    body.appendChild(h2StoreOne);
-    h2StoreOne.textContent = this.Location;
-    let ulStoreOne = document.createElement('ul');
-    h2StoreOne.appendChild(ulStoreOne);
+    let div = document.getElementById('Cites');
+    let h2E1 = document.createElement('h2');
+    div.appendChild(h2E1);
+    h2E1.textContent = this.Location;
+    let ulE1 = document.createElement('ul');
+    h2E1.appendChild(ulE1);
     for (let i = 0; i < this.cookiesNum.length; i++) {
-        let liStoreOne = document.createElement('li')
-        ulStoreOne.appendChild(liStoreOne);
-        liStoreOne.textContent = `${workingHours[i]}: ${this.cookiesNum[i]} cookies`;
+        let liE1 = document.createElement('li')
+        ulE1.appendChild(liE1);
+        liE1.textContent = `${workingHours[i]}: ${this.cookiesNum[i]} cookies`;
     }
-        let liStoreOne = document.createElement('li')
-        ulStoreOne.appendChild(liStoreOne);
-        liStoreOne.textContent = `Total: ${this.sum} cookies`;
+        let liE1 = document.createElement('li')
+        ulE1.appendChild(liE1);
+        liE1.textContent = `Total: ${this.sum} cookies`;
     }
 }
 lima.avgCustmers();
