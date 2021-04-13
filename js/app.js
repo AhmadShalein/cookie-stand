@@ -232,7 +232,7 @@ let container = document.getElementById('Cites');
 let tableEl = document.createElement('table');
 let totalOfTotal = 0;
 
-function Store (location,min,max,avg){
+function Store(location, min, max, avg) {
     this.location = location;
     this.min = min;
     this.max = max;
@@ -245,31 +245,28 @@ function Store (location,min,max,avg){
 
 }
 Store.prototype.avgCustomers = function () {
-    for(let i = 0 ; i < workingHours.length ; i++){
-    this.customers.push(Math.floor(Math.random() * (this.max - this.min) + this.min));
+    for (let i = 0; i < workingHours.length; i++) {
+        this.customers.push(Math.floor(Math.random() * (this.max - this.min) + this.min));
     }
 }
 Store.prototype.cookiesPurchased = function () {
-    for(let j = 0 ; j < workingHours.length ; j++){
-    this.cookies.push(Math.floor(this.customers[j] * this.avg));
+    for (let j = 0; j < workingHours.length; j++) {
+        this.cookies.push(Math.floor(this.customers[j] * this.avg));
     }
 }
 Store.prototype.cookiesSum = function () {
-    let sum = 0;
-    for (let i = 0; i < workingHours.length; i++) {
-        sum = sum + this.cookies[i];
-    }
+
 }
 
-function headerTable(){
+function headerTable() {
     let headerEl = document.createElement('tr');
     container.appendChild(tableEl);
     tableEl.appendChild(headerEl);
     let thEl = document.createElement('th');
     headerEl.appendChild(thEl);
-    thEl.textContent = 'Location';
+    thEl.textContent = '';
 
-    for(let i = 0 ; i < workingHours.length ; i++){
+    for (let i = 0; i < workingHours.length; i++) {
         let thEl2 = document.createElement('th');
         headerEl.appendChild(thEl2);
         thEl2.textContent = workingHours[i];
@@ -280,37 +277,43 @@ function headerTable(){
 }
 headerTable();
 
-Store.prototype.render = function(){
+Store.prototype.render = function () {
     let trEl = document.createElement('tr');
     tableEl.appendChild(trEl);
     let tdEl1 = document.createElement('td');
     trEl.appendChild(tdEl1);
     tdEl1.textContent = this.location;
 
-    for(let s = 0 ; s < workingHours.length ; s++){
+    for (let s = 0; s < workingHours.length; s++) {
         let td3 = document.createElement('td');
         trEl.appendChild(td3);
         td3.textContent = this.cookies[s];
     }
+    for (let i = 0; i < workingHours.length; i++) {
+        this.sum += this.cookies[i];
+    }
+    let td6 = document.createElement('td');
+    trEl.appendChild(td6);
+    td6.textContent = this.sum;
     console.log(this.cookies);
 }
 
-    function footerTable(){
+function footerTable() {
     let trEl = document.createElement('tr');
     tableEl.appendChild(trEl);
     let td3 = document.createElement('td');
     trEl.appendChild(td3);
     td3.textContent = "Totals";
 
-    for(let i = 0 ; i < workingHours.length; i++){
+    for (let i = 0; i < workingHours.length; i++) {
         let td4 = document.createElement('td');
         trEl.appendChild(td4);
-        let count = 0;
-        for (let j = 0 ; j < Stores.length ; j++){
-            count += Stores[j].cookies[i];
+        let countOne = 0;
+        for (let j = 0; j < Stores.length; j++) {
+            countOne += Stores[j].cookies[i];
         }
-        totalOfTotal += count;
-        td4.textContent = count;
+        totalOfTotal += countOne;
+        td4.textContent = countOne;
         console.log(totalOfTotal);
     }
     let td5 = document.createElement('td');
