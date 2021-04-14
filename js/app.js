@@ -333,3 +333,26 @@ for (var i = 0; i < Stores.length; i++) {
     Stores[i].render();
 }
 footerTable();
+
+const form = document.getElementById('cookiesForm');
+
+form.addEventListener('submit',handleSubmitting);
+
+function handleSubmitting(event){
+    event.preventDefault();
+    console.log(event);
+
+    let cityField = event.target.cityField.value;
+    let min = parseInt(event.target.min.value);
+    let max = parseInt(event.target.max.value);
+    let avg = parseFloat(event.target.avg.value);
+
+    tableEl.removeChild(tableEl.lastChild);
+    let newStore = new Store(cityField,min,max,avg);
+    newStore.avgCustomers();
+    newStore.cookiesPurchased();
+    newStore.cookiesSum();
+    newStore.render();
+    footerTable();
+    console.log(cityField,min,max,avg);
+}
