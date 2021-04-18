@@ -341,6 +341,12 @@ form.addEventListener('submit',handleSubmitting);
 function handleSubmitting(event){
     event.preventDefault();
     console.log(event);
+    
+    if (form.validity.typeMismatch) {
+    form.setCustomValidity("I am expecting a new location!");
+  } else {
+    form.setCustomValidity("");
+  }
 
     let cityField = event.target.cityField.value;
     let min = parseInt(event.target.min.value);
